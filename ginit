@@ -1,0 +1,15 @@
+#!/bin/bash
+mkdir $1
+cd $1
+go mod init $1
+mkdir bin pkg src
+cd src
+cat > main.go <<EOF
+package main
+
+import "fmt"
+
+func main(){
+    fmt.Println("Hello, World!")
+}
+EOF

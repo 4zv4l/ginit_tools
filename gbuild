@@ -1,0 +1,3 @@
+#!/bin/bash
+bin=`basename "$PWD"`
+go build -o bin/$bin ./src/.
